@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header className='w-full'>
       <nav className='flex justify-between items-center px-6 md:px-20 py-4'>
-        <p>
+        <p className='text-2xl font-bold'>
           SaaS<span className='text-indigo-700'>Me</span>
         </p>
 
