@@ -9,6 +9,7 @@ const Navbar = () => {
           SaaS<span className='text-indigo-700'>Me</span>
         </p>
         <p>Blog</p>
+        <button className="rounded-[3px] bg-violet-800 px-5 py-3 shadow-lg shadow-indigo-500/50 text-white">Signup for the Newsletter</button>
 
       </nav>
     </header>
