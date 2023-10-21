@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import fs from "fs";
+import Link from 'next/link';
 
 
 const getPostMetadata = () => {
@@ -11,6 +12,15 @@ const getPostMetadata = () => {
 }
 
 const Home = () => {
+  const postMetadata = getPostMetadata();
+  const postPreviews = postMetadata.map((slug) => (
+    <div>
+      <Link href={`/posts/${slug}`}>
+        <h2>{slug}</h2>
+      </Link>
+    </div>
+  ))
+
   return (
     <>
       <section className="px-6">
@@ -26,6 +36,7 @@ const Home = () => {
           <p className=' px-6 text-2xl font-bold'>
             Latest Stories
           </p>
+          <div>{postPreviews}</div>
         </div>
       </section>
     </>
