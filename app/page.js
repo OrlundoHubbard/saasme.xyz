@@ -34,9 +34,9 @@ const Home = () => {
       <section className="px-6">
         <div className=" mt-10 container mx-auto">
           <p className=' px-6 text-2xl font-bold'>
-            Latest Stories
+            Latest Trends
           </p>
-          <div>{postPreviews}</div>
+          <div className="mt-11">{postPreviews}</div>
         </div>
       </section>
     </>
