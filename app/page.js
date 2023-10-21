@@ -1,4 +1,14 @@
 import Image from 'next/image'
+import fs from "fs";
+
+
+const getPostMetadata = () => {
+  const folder = "posts/";
+  const files = fs.readdirSync(folder);
+  const markdownPosts = files.filter((file) => file.endsWith(".md"));
+  const slugs = markdownPosts.map((file) => file.replace(".md", ""));
+  return slugs;
+}
 
 const Home = () => {
   return (
@@ -9,10 +19,14 @@ const Home = () => {
           <p className='mt-4 font-bold text-gray-500'>Get the latest exploding SaaS trends sent straight to your inbox</p>
         </div>
       </section>
-      <section>
-        <p>
-          Latest Stories
-        </p>
+      {/* blog section */}
+
+      <section className="px-6">
+        <div className=" mt-10 container mx-auto">
+          <p className=' px-6 text-2xl font-bold'>
+            Latest Stories
+          </p>
+        </div>
       </section>
     </>
   )
