@@ -8,6 +8,7 @@ const Navbar = () => {
         <p className='text-2xl font-bold'>
           SaaS<span className='text-indigo-700'>Me</span>
         </p>
+        <p>Blog</p>
 
       </nav>
     </header>
