@@ -1,23 +1,17 @@
 import Image from 'next/image'
-import fs from "fs";
 import Link from 'next/link';
+import getPostMetadata from '@/components/getPostMetadata';
 
-
-const getPostMetadata = () => {
-  const folder = "posts/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  const slugs = markdownPosts.map((file) => file.replace(".md", ""));
-  return slugs;
-}
 
 const Home = () => {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((slug) => (
+  const postPreviews = postMetadata.map((post) => (
     <div>
-      <Link href={`/posts/${slug}`}>
-        <h2>{slug}</h2>
+      <Link href={`/posts/${post.slug}`}>
+        <h2>{post.title}</h2>
       </Link>
+      <h2>{post.subtitle}</h2>
+      <h2>{post.date}</h2>
     </div>
   ))
 
