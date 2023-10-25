@@ -22,7 +22,7 @@ const Home = () => {
       {/* blog section */}
 
       <section className="px-6">
-        <div className=" mt-10 container mx-auto">
+        <div className=" mt-10 container mx-auto  mx-w-2x">
           <p className=' px-6 text-2xl font-bold'>
             Latest Trends
           </p>
