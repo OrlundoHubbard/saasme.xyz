@@ -26,7 +26,7 @@ const Home = () => {
           <p className=' px-6 text-2xl font-bold'>
             Latest Trends
           </p>
-          <div className="mt-11">{postPreviews}</div>
+          <div className="grid grid-cols-3 gap-6 mt-11">{postPreviews}</div>
         </div>
       </section>
     </>
