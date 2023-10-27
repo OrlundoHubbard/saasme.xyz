@@ -7,8 +7,11 @@ const PostPreview = (props) => {
             <Link href={`/posts/${props.slug}`}>
                 <h2>{props.title}</h2>
             </Link>
+            <div className="flex gap-4">
+                <div className="border-2 border-solid">Text</div>
+                <h2>{props.date}</h2>
+            </div>
             <h2>{props.subtitle}</h2>
-            <h2>{props.date}</h2>
         </div>
     )
 }

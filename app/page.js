@@ -29,6 +29,16 @@ const Home = () => {
           <div className="grid grid-cols-3 gap-6 mt-11">{postPreviews}</div>
         </div>
       </section>
+
+      {/*email section */}
+
+      <section>
+        <div>
+          <h2 className="text-3xl font-bold">
+            Discover <span className="text-indigo-700">SaaS Trends</span> Before They Take Off!
+          </h2>
+        </div>
+      </section>
     </>
   )
 }
