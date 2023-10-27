@@ -33,10 +33,11 @@ const Home = () => {
       {/*email section */}
 
       <section>
-        <div>
-          <h2 className="text-3xl font-bold">
+        <div className="border border-red-500 text-center">
+          <h2 className="text-4xl font-bold">
             Discover <span className="text-indigo-700">SaaS Trends</span> Before They Take Off!
           </h2>
+          <p className='mt-4 font-bold text-gray-500'>Get the latest exploding SaaS trends sent straight to your inbox</p>
         </div>
       </section>
     </>
