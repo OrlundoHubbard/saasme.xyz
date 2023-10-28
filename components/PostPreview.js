@@ -8,7 +8,7 @@ const PostPreview = (props) => {
                 <h2>{props.title}</h2>
             </Link>
             <div className="flex gap-4">
-                <div className="border-2 border-solid">Text</div>
+                <div className="border-2 border-solid px-3">Text</div>
                 <h2>{props.date}</h2>
             </div>
             <h2>{props.subtitle}</h2>

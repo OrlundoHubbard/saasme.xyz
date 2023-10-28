@@ -8,7 +8,7 @@ const Home = () => {
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
     <PostPreview
-    key={post.slug} {...post} />
+      key={post.slug} {...post} />
   ))
 
   return (
@@ -32,17 +32,17 @@ const Home = () => {
 
       {/*email section */}
 
-      <section className="border border-red-500 mt-40">
+      <section className="mt-40">
         <div className="text-center">
           <h2 className="text-4xl font-bold">
             Discover <span className="text-indigo-700">SaaS Trends</span> Before They Take Off!
           </h2>
           <p className='mt-4 font-bold text-gray-500'>Get the latest exploding SaaS trends sent straight to your inbox</p>
           <form>
-            <label>Enter Your Email</label>
-            <input type="text" />
-            <button>Get SaaS Trends</button>
-            
+            <div className="mt-10">
+              <input type="text" placeholder="Enter Your Email" className=" w-1/3 border border-slate-200 h-12 px-6" />
+              <button className="rounded-[3px] bg-violet-800 px-6 py-3  text-white" type="submit">Get SaaS Trends</button>
+            </div>
           </form>
         </div>
       </section>
