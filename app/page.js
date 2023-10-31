@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link';
 import getPostMetadata from '@/components/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
+import Subscribe from '../components/Subscribe';
+"use client"
 
 
 const Home = () => {
@@ -38,12 +40,7 @@ const Home = () => {
             Discover <span className="text-indigo-700">SaaS Trends</span> Before They Take Off!
           </h2>
           <p className='mt-4 font-bold text-gray-500'>Get the latest exploding SaaS trends sent straight to your inbox</p>
-          <form>
-            <div className="mt-10">
-              <input type="text" placeholder="Enter Your Email" className=" w-1/3 border border-slate-200 h-12 px-6" />
-              <button className="rounded-[3px] bg-violet-800 px-6 py-3  text-white" type="submit">Get SaaS Trends</button>
-            </div>
-          </form>
+          <Subscribe />
         </div>
       </section>
     </>
