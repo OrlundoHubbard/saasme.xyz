@@ -1,4 +1,4 @@
-import fs from "fs";
+import * as fs from "fs";
 import Link from 'next/link';
 import matter from 'gray-matter';
 

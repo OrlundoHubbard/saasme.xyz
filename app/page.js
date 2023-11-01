@@ -1,9 +1,10 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link';
 import getPostMetadata from '@/components/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
 import Subscribe from '../components/Subscribe';
-"use client"
+
 
 
 const Home = () => {
